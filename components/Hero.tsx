@@ -11,14 +11,14 @@ const Hero: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6 text-center md:text-left">
         <FadeIn delay={100}>
           <p className="text-gray-500 font-medium tracking-wide mb-4 uppercase text-sm">
-            Portfolio 2025
+            Portfolio 2026
           </p>
         </FadeIn>
         
         <FadeIn delay={200}>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight mb-6 text-black">
             Sunny Rawat <span className="text-gray-300">—</span><br />
-            Web Developer
+            Founder of Raizian | Frontend Dev.
           </h1>
         </FadeIn>
         
