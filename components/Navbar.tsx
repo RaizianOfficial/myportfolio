@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="text-xl font-bold tracking-tight z-50">
-          Raizian
+          Portfolio - Sunny Rawat
         </a>
         
         <div className="hidden md:flex space-x-8">
