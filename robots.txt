@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Block junk / internal stuff
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /api/
+Disallow: /auth/
+Disallow: /login/
+Disallow: /signup/
+
+# Allow assets
+Allow: /assets/
+Allow: /images/
+Allow: /fonts/
+
+# Sitemap location
+Sitemap: https://portfolio.raizian.in/sitemap.xml
