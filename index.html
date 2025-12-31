@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunny Rawat | Frontend Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              offwhite: '#fafafa',
-              charcoal: '#1a1a1a',
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      body {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
-    </style>
+  <!-- Core Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Sunny Rawat — Founder of Raizian | Frontend Developer</title>
+  <meta name="description" content="Sunny Rawat is the founder of Raizian and a frontend developer building modern web products, tools, and scalable UI systems." />
+  <meta name="keywords" content="Sunny Rawat, Raizian Founder, Frontend Developer, Web Developer, React Developer, UI Engineer, Raizian Tools" />
+  <meta name="author" content="Sunny Rawat, Founder of Raizian" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://raizian.in/founder" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Sunny Rawat — Founder of Raizian" />
+  <meta property="og:description" content="Founder of Raizian. Building clean UI, tools, and modern web products." />
+  <meta property="og:url" content="https://raizian.in/founder" />
+  <meta property="og:image" content="https://raizian.in/og/founder.png" />
+  <meta property="og:site_name" content="Raizian" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sunny Rawat — Founder of Raizian" />
+  <meta name="twitter:description" content="Founder of Raizian. Frontend developer building modern tools and web experiences." />
+  <meta name="twitter:image" content="https://raizian.in/og/founder.png" />
+
+  <!-- Brand Authority -->
+  <meta name="publisher" content="Raizian" />
+  <meta name="application-name" content="Raizian" />
+
+  <!-- Theme / PWA -->
+  <meta name="theme-color" content="#1a1a1a" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            offwhite: '#fafafa',
+            charcoal: '#1a1a1a',
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- React Import Map -->
   <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
+  {
+    "imports": {
+      "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+      "react/": "https://aistudiocdn.com/react@^19.2.0/",
+      "react": "https://aistudiocdn.com/react@^19.2.0"
+    }
   }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/index.css" />
+
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
+
   <body class="bg-white text-black antialiased selection:bg-black selection:text-white">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
