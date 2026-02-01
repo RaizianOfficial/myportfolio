@@ -29,7 +29,7 @@ const PROJECTS = [
     title: 'Luna Cycle',
     description: 'A website for tracking periods by your phone through this page',
     liveUrl: 'https://luna-cycle-two.vercel.app',
-    tags: ['Landing Page', 'UI', 'Performance'],
+    tags: ['Health', 'UI', 'Tracker'],
   },
   {
     id: 5,
