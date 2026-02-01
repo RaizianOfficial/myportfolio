@@ -13,7 +13,7 @@ const PROJECTS = [
   {
     id: 2,
     title: 'Shrudhaba',
-    description: 'Clean brand website with elegant sections and smooth UX for storytelling.',
+    description: 'Clean website for restaurants with elegant sections and smooth UX for storytelling.',
     liveUrl: 'https://shrudhaba.vercel.app',
     tags: ['Next.js', 'Design', 'Brand'],
   },
@@ -27,7 +27,7 @@ const PROJECTS = [
   {
     id: 4,
     title: 'Luna Cycle',
-    description: 'Bold landing page for a cycle brand with modern visuals and structure.',
+    description: 'A website for tracking periods by your phone through this page',
     liveUrl: 'https://luna-cycle-two.vercel.app',
     tags: ['Landing Page', 'UI', 'Performance'],
   },
