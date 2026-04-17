@@ -3,7 +3,11 @@ import FadeIn from './ui/FadeIn';
 
 type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 
-const CONTACT_API_URL = 'http://localhost:3001/api/contact';
+// In production (Vercel), the API route is relative: /api/contact
+// In local dev, we hit the Express server at localhost:3001
+const CONTACT_API_URL = import.meta.env.DEV
+  ? 'http://localhost:3001/api/contact'
+  : '/api/contact';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
