@@ -56,11 +56,11 @@ const PROJECTS = [
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-28 bg-gradient-to-b from-white to-gray-50">
+    <section id="projects" className="py-28 bg-white border-y-[3px] border-black">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
           <div className="mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4 text-black">
               Selected Works
             </h2>
             <p className="text-gray-500 max-w-lg">
@@ -73,19 +73,16 @@ const Projects: React.FC = () => {
           {PROJECTS.map((project, index) => (
             <FadeIn key={project.id} delay={index * 100}>
               <div className="
-                relative h-full rounded-2xl p-[1px]
-                bg-gradient-to-br from-cyan-400/40 via-purple-500/40 to-pink-500/40
-                hover:shadow-[0_0_40px_rgba(99,102,241,0.35)]
-                transition-shadow duration-500
+                h-full p-8 bg-white border-[3px] border-black shadow-brutal
+                transition-all duration-300 hover:-translate-y-1 hover:shadow-brutal-lg
+                flex flex-col relative overflow-hidden group
               ">
-                <div className="
-                  h-full rounded-2xl p-6
-                  bg-white/70 backdrop-blur-xl
-                  border border-white/40
-                  flex flex-col
-                ">
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl font-semibold">
+                {/* Decorative brutalist shapes inside card */}
+                <div className="absolute -right-4 -bottom-4 w-16 h-16 bg-accent opacity-0 group-hover:opacity-100 transition-opacity -z-0" style={{ backgroundImage: 'radial-gradient(#000 2px, transparent 2px)', backgroundSize: '10px 10px' }} />
+
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-2xl font-bold uppercase tracking-tight text-black flex-1 pr-4">
                       {project.title}
                     </h3>
                     <a
@@ -93,17 +90,16 @@ const Projects: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="
-                        p-2 rounded-full
-                        bg-black/5 hover:bg-black hover:text-white
-                        transition-colors
+                        flex-shrink-0 p-2 border-[3px] border-black bg-accent hover:bg-black hover:text-accent hover:-translate-y-1
+                        transition-transform shadow-[2px_2px_0px_#000] hover:shadow-[4px_4px_0px_#000]
                       "
                       title="Live Website"
                     >
-                      <Icons.ExternalLink className="w-4 h-4" />
+                      <Icons.ExternalLink className="w-5 h-5" />
                     </a>
                   </div>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                  <p className="text-base text-gray-800 font-medium leading-relaxed mb-8 border-b-2 border-black/10 pb-6">
                     {project.description}
                   </p>
 
@@ -112,10 +108,8 @@ const Projects: React.FC = () => {
                       <span
                         key={tag}
                         className="
-                          text-xs px-2.5 py-1 rounded-md
-                          bg-white/60 backdrop-blur
-                          border border-gray-200
-                          text-gray-700
+                          text-xs font-bold px-3 py-1.5 uppercase tracking-wider
+                          bg-white border-2 border-black text-black
                         "
                       >
                         {tag}

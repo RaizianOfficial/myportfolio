@@ -43,7 +43,10 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- SMTP.js -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -52,12 +55,18 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
+            sans: ['Space Grotesk', 'sans-serif'],
           },
           colors: {
             offwhite: '#fafafa',
             charcoal: '#1a1a1a',
+            accent: '#ccff00', // Electric lime green
           },
+          boxShadow: {
+            'brutal': '4px 4px 0px #000',
+            'brutal-lg': '8px 8px 0px #000',
+            'brutal-accent': '4px 4px 0px #ccff00',
+          }
         },
       },
     }
