@@ -38,6 +38,13 @@ const PROJECTS = [
     liveUrl: 'https://ai-billing-app-eight.vercel.app/',
     tags: ['Firebase', 'POS', 'Mobile-First'],
   },
+  {
+  id: 6,
+  title: 'Raze Prompts',
+  description: 'An AI prompt discovery platform with premium UI, category filters, OTP-based auth, and an admin panel to manage prompts.',
+  liveUrl: 'https://prompts.raizian.in',
+  tags: ['React', 'Firebase', 'PWA', 'AI'],
+},
 ];
 
 const Projects: React.FC = () => {
